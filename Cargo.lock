@@ -355,16 +355,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "learn-yew"
-version = "0.1.0"
-dependencies = [
- "gloo",
- "wasm-bindgen-futures",
- "yew",
- "yew-router",
-]
-
-[[package]]
 name = "libc"
 version = "0.2.139"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -868,6 +858,16 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "yew-number-api"
+version = "0.1.0"
+dependencies = [
+ "gloo",
+ "wasm-bindgen-futures",
+ "yew",
+ "yew-router",
 ]
 
 [[package]]
