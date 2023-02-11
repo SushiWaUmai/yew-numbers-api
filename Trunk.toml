@@ -5,8 +5,4 @@ dist = "dist"
 [[hooks]]
 stage = "build"
 command = "sh"
-command_arguments = ["-c", "npx --yes tailwindcss -i ./src/styles/tailwind.css -o $TRUNK_STAGING_DIR/tailwind.css"]
-
-[[proxy]]
-rewrite = "/api/v1/"
-backend = "http://localhost:9000/"
+command_arguments = ["-c", "npx -y tailwindcss -i ./src/styles/tailwind.css -o $TRUNK_STAGING_DIR/tailwind.css"]
