@@ -1,4 +1,4 @@
-use yew_number_api::App;
+use yew_numbers_api::App;
 
 fn main() {
     yew::Renderer::<App>::new().render();

@@ -29,7 +29,9 @@ jobs:
         uses: jetli/trunk-action@v0.4.0
 
       - name: Build
-        run: trunk build
+        run: trunk build --public-url=$PUBLIC_URL
+        env:
+          PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
