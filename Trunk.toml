@@ -6,3 +6,7 @@ dist = "dist"
 stage = "pre_build"
 command = "sh"
 command_arguments = ["-c", "npx -y tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/global.css"]
+
+[[proxy]]
+rewrite = "/api/"
+backend = "http://numbersapi.com/"
