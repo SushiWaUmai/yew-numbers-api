@@ -18,7 +18,7 @@ pub fn fact(props: &FactProps) -> Html {
                 let num_fact = num_fact.clone();
                 wasm_bindgen_futures::spawn_local(async move {
                     let fetched_fact =
-                        Request::get(format!("/api/{}", number).as_str())
+                        Request::get(format!("http://numbersapi.com/{}", number).as_str())
                             .send()
                             .await
                             .unwrap()
