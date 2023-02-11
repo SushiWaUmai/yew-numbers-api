@@ -16,6 +16,11 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
 
+      - name: Install rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          target: wasm32-unknown-unknown
+
       - name: Install trunk
         uses: jetli/trunk-action@v0.4.0
 
