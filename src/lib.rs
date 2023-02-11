@@ -19,15 +19,15 @@ fn switch(routes: Route) -> Html {
     match routes {
         Route::Home => html! { <Home /> },
         Route::Fact { number } => html! { <Fact {number} /> },
-        Route::NotFound => html! { <NotFound /> }
+        Route::NotFound => html! { <NotFound /> },
     }
 }
 
 #[function_component(App)]
 pub fn app() -> Html {
     html! {
-        <HashRouter>
+        <BrowserRouter>
             <Switch<Route> render={switch} />
-        </HashRouter>
+        </BrowserRouter>
     }
 }
