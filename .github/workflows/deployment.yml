@@ -27,7 +27,9 @@ jobs:
         uses: jetli/trunk-action@v0.4.0
 
       - name: Build
-        run: trunk build
+        run: |
+          npm install --location=global tailwindcss
+          trunk build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
