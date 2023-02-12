@@ -3,6 +3,6 @@ use yew::prelude::*;
 #[function_component(Home)]
 pub fn home() -> Html {
     html! {
-        <h1 class={classes!("text-8xl")}>{"Home"}</h1>
+        <h1 class={classes!("text-8xl", "text-center")}>{"Home"}</h1>
     }
 }

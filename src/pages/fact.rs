@@ -33,6 +33,8 @@ pub fn fact(props: &FactProps) -> Html {
     }
 
     html! {
-        <h1>{num_fact.as_str()}</h1>
+        <div class={classes!("container", "mx-auto")}>
+            <h1 class={classes!("text-6xl", "text-center")}>{num_fact.as_str()}</h1>
+        </div>
     }
 }
