@@ -7,4 +7,16 @@
     @apply absolute inset-0;
     @apply bg-night text-snow;
   }
+
+  /* Thanks to https://stackoverflow.com/a/4298216/14082484 */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  input[type=number] {
+      -moz-appearance:textfield;
+  }
 }
+

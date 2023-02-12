@@ -862,10 +862,11 @@ dependencies = [
 
 [[package]]
 name = "yew-numbers-api"
-version = "0.1.0"
+version = "1.0.0"
 dependencies = [
  "gloo",
  "wasm-bindgen-futures",
+ "web-sys",
  "yew",
  "yew-router",
 ]

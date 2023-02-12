@@ -11,7 +11,7 @@ enum Route {
     #[at("/")]
     Home,
     #[at("/fact/:number")]
-    Fact { number: i32 },
+    Fact { number: i64 },
     #[not_found]
     #[at("/404")]
     NotFound,
