@@ -80,7 +80,7 @@ pub fn fact(props: &FactProps) -> Html {
     html! {
         <div class={classes!("h-full")}>
             <div class={classes!("container", "mx-auto", "h-full", "flex", "flex-col")}>
-                <div class={classes!("flex-grow", "grid", "place-items-center", "h-full")}>
+                <div class={classes!("flex-grow", "grid", "place-items-center", "h-full", "p-2")}>
                     <div>
                         <form onsubmit={handle_submit}>
                             <input
