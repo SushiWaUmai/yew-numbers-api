@@ -10,7 +10,7 @@ use yew_router::prelude::*;
 enum Route {
     #[at("/")]
     Home,
-    #[at("/:number")]
+    #[at("/fact/:number")]
     Fact { number: i32 },
     #[not_found]
     #[at("/404")]
