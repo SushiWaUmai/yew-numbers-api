@@ -931,7 +931,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('yew-numbers-api-97740155d84e6ce3_bg.wasm', import.meta.url);
+        input = new URL('yew-numbers-api-125f3250da0e16b4_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
