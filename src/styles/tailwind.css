@@ -5,6 +5,6 @@
 @layer base {
   body {
     @apply absolute inset-0;
-    @apply bg-black text-white;
+    @apply bg-night text-snow;
   }
 }
