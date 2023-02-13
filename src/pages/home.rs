@@ -12,15 +12,15 @@ pub fn home() -> Html {
                     <h1 class={classes!("text-6xl", "text-tiffany")}>{"Yew Numbers API"}</h1>
                     <span class={classes!("text-2xl", "px-2")}>
                         {"A Frontend for the "}
-                        <a href="http://numbersapi.com/" target="_blank" class={classes!("text-tiffany")}>{"Numbers API"}</a>
+                        <a href="http://numbersapi.com/" target="_blank" class={classes!("text-tiffany", "link-btn")}>{"Numbers API"}</a>
                         {" written in "}
-                        <a href="https://www.rust-lang.org/" target="_blank" class={classes!("text-tiffany")}>{"Rust"}</a>
+                        <a href="https://www.rust-lang.org/" target="_blank" class={classes!("text-tiffany", "link-btn")}>{"Rust"}</a>
                         {" with "}
-                        <a href="https://yew.rs/" target="_blank" class={classes!("text-tiffany")}>{"Yew.rs"}</a>
+                        <a href="https://yew.rs/" target="_blank" class={classes!("text-tiffany", "link-btn")}>{"Yew.rs"}</a>
                     </span>
                     <div class={classes!("my-4", "p-2")}>
                         <Link<Route> to={Route::Fact { number: 1 }}>
-                            <span class={classes!("text-xl", "py-2", "px-4", "bg-persian", "rounded")}>
+                            <span class={classes!("text-xl", "py-2", "px-4", "bg-persian", "rounded", "hover:bg-tiffany", "duration-200")}>
                                 {"Get Started!"}
                             </span>
                         </Link<Route>>

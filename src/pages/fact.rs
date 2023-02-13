@@ -97,10 +97,14 @@ pub fn fact(props: &FactProps) -> Html {
                 </div>
                 <div class={classes!("flex", "justify-center", "gap-x-4", "m-8")}>
                     <Link<Route> to={Route::Fact { number: number - 1 }}>
-                        <span class={classes!("text-2xl", "bg-jet", "px-4", "py-2", "rounded")}>{"<"}</span>
+                        <span class={classes!("text-2xl", "bg-jet", "px-4", "py-2", "rounded", "hover:bg-persian", "duration-200")}>
+                            {"<"}
+                        </span>
                     </Link<Route>>
                     <Link<Route> to={Route::Fact { number: number + 1 }}>
-                        <span class={classes!("text-2xl", "bg-jet", "px-4", "py-2", "rounded")}>{">"}</span>
+                        <span class={classes!("text-2xl", "bg-jet", "px-4", "py-2", "rounded", "hover:bg-persian", "duration-200")}>
+                            {">"}
+                        </span>
                     </Link<Route>>
                 </div>
             </div>

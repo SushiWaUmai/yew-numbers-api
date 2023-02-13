@@ -20,3 +20,13 @@
   }
 }
 
+
+@layer components {
+  .link-btn {
+    @apply relative;
+    @apply transition duration-200;
+    @apply after:absolute after:inset-0 after:border-tiffany hover:after:border-b-2 after:-z-10;
+    @apply hover:after:animate-line focus:after:animate-line;
+    @apply hover:scale-110;
+  }
+}
