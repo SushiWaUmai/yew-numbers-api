@@ -722,6 +722,10 @@ input[type=number] {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .container {
   width: 100%;
 }
@@ -756,3 +760,78 @@ input[type=number] {
   }
 }
 
+.link-btn {
+  position: relative;
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.link-btn::after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -10;
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(125 226 209 / var(--tw-border-opacity));
+}
+
+.link-btn:hover::after {
+  content: var(--tw-content);
+  border-bottom-width: 2px;
+}
+
+@keyframes line {
+  0% {
+    content: var(--tw-content);
+    width: 0%;
+  }
+
+  100% {
+    content: var(--tw-content);
+    width: 100%;
+  }
+}
+
+.link-btn:hover::after {
+  content: var(--tw-content);
+  animation: line 200ms both;
+}
+
+@keyframes line {
+  0% {
+    content: var(--tw-content);
+    width: 0%;
+  }
+
+  100% {
+    content: var(--tw-content);
+    width: 100%;
+  }
+}
+
+.link-btn:focus::after {
+  content: var(--tw-content);
+  animation: line 200ms both;
+}
+
+.link-btn:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:bg-persian:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 153 137 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-tiffany:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 226 209 / var(--tw-bg-opacity));
+}
