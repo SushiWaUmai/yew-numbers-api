@@ -30,7 +30,7 @@ pub fn fact(props: &FactProps) -> Html {
                 wasm_bindgen_futures::spawn_local(async move {
                     let fetched_fact = Request::get(
                         format!(
-                            "https://cors-anywhere.herokuapp.com/http://numbersapi.com/{}",
+                            "https://api.allorigins.win/raw?url=http://numbersapi.com/{}",
                             number
                         )
                         .as_str(),
